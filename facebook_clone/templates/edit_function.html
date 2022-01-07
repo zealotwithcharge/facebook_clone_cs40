@@ -1,0 +1,60 @@
+<script>
+    function editText(id){
+        var message1 = cleanEdit(document.getElementById(id.slice(0,-1)).innerHTML)
+        var id1 = id.slice(0,-1)
+        var confirmer = "{{interface['confirm']}}"
+        document.getElementById(id1).innerHTML = '<form action= {{current_path}} method=POST><input type = "hidden" name = "id1" value = "'+id1+'"><input type="text" id= "'+id1+'box" name = "message1" value= ""><input type=submit value="'+confirmer+'"></form>'
+        document.getElementById(id1+"box").value = message1
+        myFunction(id)
+        document.getElementById(id).setAttribute("disabled","")
+    }
+    
+    function cleanEdit(message)
+    {
+      message1 = message.replace('"','\\\"')
+      message1= message1.replace("'","\\\'")
+      
+      return message
+    }
+    /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction(id) {
+            
+          document.getElementById(id.slice(0,-1)+"d").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+</script>
+<script>
+  function myFunction1() {
+
+      document.getElementById('dropdown1').classList.toggle("show1");
+    }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show1')) {
+          openDropdown.classList.remove('show1');
+        }
+      }
+    }
+  }
+</script>
+</head>

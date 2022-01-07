@@ -1,0 +1,408 @@
+{% include 'facebook_base.html' %}
+
+
+
+
+
+<span id="ssrb_top_nav_end" style="display:none"></span>
+<div class="rq0escxv l9j0dhe7 du4w35lb">
+    <span style = "display:flex;float:left;height:842px;width:300px;position:sticky;top:76px;flex-direction:column">
+        <span style = "font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: normal;height: 50;text-align: center;width:300px;position:relative">
+    Statistics
+    </span>
+        <ul>
+        {% for stat in stats %}
+        <li class = "high_scorer" style = "position:relative;width:100%;list-style:none ;padding-left: 20px; padding-top: 20px;padding-bottom: 20px;"><span style = "font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            font-weight: normal;height: 50;text-align: center;width:300px;position:relative">
+        {{stat}}
+        </span></li>
+        {% endfor %}  
+    </ul>
+    </span>
+
+
+
+    <span style = "display:flex;float:right;height:842px;width:300px;position:sticky;top:76px;flex-direction:column">
+        <span style = "font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: normal;height: 50;text-align: center;width:300px;position:relative">
+    Top 10 Scorers
+    </span>
+        <ol>
+        {% for user in top_ten %}
+        <li class = "high_scorer" style = "position:relative;width:100%;list-style-position:calc(50%) ;padding-top: 10px;padding-bottom: 10px;"><div class=""><div><div data-visualcompletion="ignore-dynamic" style="padding-left: 8px; padding-right: 8px;"><a class="oajrlxb2 gs1a9yip g5ia77u1 mtkw9kbi tlpljxtp qensuy8j ppp5ayq2 goun2846 ccm00jje s44p3ltw mk2mc5f4 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 rq0escxv nhd2j8a9 mg4g778l pfnyh3mw p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x tgvbjcpo hpfvmrgz jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso l9j0dhe7 i1ao9s8h esuyzwwr f1sip0of du4w35lb btwxx1t3 abiwlrkh p8dawk7l lzcic4wl ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi a8c37x1j" href="/profile?profile_username={{user[0]}}" role="link" tabindex="0"><div class="ow4ym5g4 auili1gw rq0escxv j83agx80 buofh1pr g5gj957u i1fnvgqd oygrvhab cxmmr5t8 hcukyx3x kvgmc6g5 hpfvmrgz qt6c0cv9 jb3vyjys l9j0dhe7 du4w35lb bp9cbjyn btwxx1t3 dflh9lhu scb9dxdr nnctdnn4"><div class="j83agx80 cbu4d94t tvfksri0 aov4n071 bi6gxh9e l9j0dhe7 nqmvxvec m6uieof3 icc0peqn hx8drtub j13r6fgp nddp3pr2"><div class="q9uorilb l9j0dhe7 pzggbiyp du4w35lb"><svg aria-hidden="true" class="pzggbiyp" data-visualcompletion="ignore-dynamic" role="none" style="height: 36px; width: 36px;"><mask id="jsc_c_2g"><circle cx="18" cy="18" fill="white" r="18"></circle><circle cx="31" cy="31" data-visualcompletion="ignore" fill="black" r="6"></circle></mask><g mask="url(#jsc_c_2g)"><image x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xlink:href="{{user[2]}}" style="height: 36px; width: 36px;"></image><circle class="mlqo0dh0 georvekb s6kb5r3f" cx="18" cy="18" r="18"></circle></g></svg>
+        </div></div><div class="ow4ym5g4 auili1gw rq0escxv j83agx80 buofh1pr g5gj957u i1fnvgqd oygrvhab cxmmr5t8 hcukyx3x kvgmc6g5 tgvbjcpo hpfvmrgz qt6c0cv9 rz4wbd8a a8nywdso jb3vyjys du4w35lb bp9cbjyn btwxx1t3 l9j0dhe7"><div class="gs1a9yip ow4ym5g4 auili1gw rq0escxv j83agx80 cbu4d94t buofh1pr g5gj957u i1fnvgqd oygrvhab cxmmr5t8 hcukyx3x kvgmc6g5 tgvbjcpo hpfvmrgz rz4wbd8a a8nywdso l9j0dhe7 du4w35lb rj1gh0hx pybr56ya f10w8fjw"><div class=""><div class="j83agx80 cbu4d94t ew0dbk1b irj2b8pg"><div class="qzhwtbm6 knvmm38d"><span class="d2edcug0 hpfvmrgz qv66sw1b c1et5uql lr9zc1uh a8c37x1j keod5gw0 nxhoafnm aigsh9s9 fe6kdd0r mau55g9w c8b282yb d3f4x2em iv3no6db jq4qci2q a3bd9o3v ekzkrbhg oo9gr5id hzawbc8m" dir="auto"><a href = "/profile?profile_username={{user[0]}}">{{user[0]}}</a>: {{user[1]}} Like(s)</span></div></div></div></div></div></div><div class="n00je7tq arfg74bv qs9ysxi8 k77z8yql i09qtzwb n7fi1qx3 b5wmifdl hzruof5a pmk7jnqg j9ispegn kr520xx4 c5ndavph art1omkt ot9fgl3s rnr61an3" data-visualcompletion="ignore"></div></a></div></div></div></li>
+        {% endfor %}  
+    </ol>
+    </span>
+    <div class="du4w35lb l9j0dhe7 cbu4d94t j83agx80">
+        <div class="j83agx80 cbu4d94t l9j0dhe7 jgljxmt5 be9z9djy">
+            <div class="j83agx80 cbu4d94t d6urw2fd dp1hu0rb l9j0dhe7 du4w35lb">
+                <div
+                    class="rq0escxv l9j0dhe7 du4w35lb j83agx80 pfnyh3mw taijpn5t gs1a9yip owycx6da btwxx1t3 dp1hu0rb p01isnhg">
+                    <div
+                        class="rq0escxv l9j0dhe7 du4w35lb j83agx80 rj1gh0hx buofh1pr g5gj957u hpfvmrgz i1fnvgqd ll8tlv6m owycx6da btwxx1t3 ho3ac9xt dp1hu0rb msh19ytf">
+                        <span id="ssrb_left_rail_start" style="display:none"></span>
+
+                        
+
+
+
+                        <div role="main"
+                            class="rq0escxv l9j0dhe7 du4w35lb j83agx80 buofh1pr g5gj957u hpfvmrgz taijpn5t gs1a9yip owycx6da btwxx1t3 pmt1y7k9 f7vcsfb0 fjf4s8hc b6rwyo50 oyrvap6t">
+                            <div class="rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t pfnyh3mw d2edcug0 hpfvmrgz">
+                                <div class="rq0escxv l9j0dhe7 du4w35lb">
+                                    <div class="tr9rh885 k4urcfbm">
+                                        <div aria-hidden="true"
+                                            class="lpgh02oy t4zy2t7z kmdw4o4n pnx7fd3z msbwk0y7 tkr6xdv7 qzwx5pty b5wmifdl hzruof5a hltw3bd0"
+                                            data-visualcompletion="ignore">
+                                            <div class="j83agx80 taijpn5t pmk7jnqg kfkz5moi kr520xx4 pybr56ya"><a
+                                                    class="oajrlxb2 rq0escxv nhd2j8a9 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x i1ao9s8h esuyzwwr f1sip0of abiwlrkh p8dawk7l lzcic4wl bp9cbjyn gcieejh5 bn081pho humdl8nn izx4hr6d p0p8w163 kip1xq3a alrr0afh be9qi1ea eu4i7hue j83agx80 idiwt2bm taijpn5t discj3wi d1544ag0 ihqw7lf3 tw6a2znq pmk7jnqg ovq5dppa"
+                                                    href="/" role="link" tabindex="0"><span
+                                                        class="d2edcug0 hpfvmrgz qv66sw1b c1et5uql lr9zc1uh a8c37x1j keod5gw0 nxhoafnm aigsh9s9 fe6kdd0r mau55g9w c8b282yb d3f4x2em iv3no6db jq4qci2q a3bd9o3v lrazzd5p oo9gr5id"
+                                                        dir="auto"><span
+                                                            class="a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5"></span></span></a>
+                                            </div>
+                                        </div><span id="ssrb_stories_start" style="display:none"></span>
+                                        <div class="d2edcug0 e3xpq0al v8c10jal ejjq64ki"></div><span
+                                            id="ssrb_stories_end" style="display:none"></span>
+                                        <div class="j83agx80 btwxx1t3 taijpn5t">
+                                            <div class="d2edcug0 oh7imozk abvwweq7 ejjq64ki"><span
+                                                    id="ssrb_composer_start" style="display:none"></span>
+                                                <div
+                                                    class="kvgmc6g5 ad2k81qe oygrvhab f9o22wc5 oh7imozk ox1siiyg mz2297xg qmfd67dx cx39uazk e3zsy2ct">
+                                                </div>
+                                                <span id="ssrb_composer_end" style="display:none"></span>
+                                                <div class="pedkr2u6 tn0ko95a pnx7fd3z"><span id="ssrb_feed_start"
+                                                        style="display:none"></span>
+                                                    <div role="feed"
+                                                        style="width:fit-content;position:relative;display:grid;">
+                                                        <h3 class="gmql0nx0 l94mrbxd p1ri9a11 lzcic4wl q45zohi1 ema1e40h ay7djpcl pfx3uekm pmk7jnqg rfua0xdk"
+                                                            dir="auto">News Feed posts</h3>
+
+
+
+
+
+                                                        {% for message in messages %}
+                                                        {% include 'facebook_post.html' %}
+                                                        {% endfor %}
+
+                                                        <div class="button_group">
+                                                            {% if current_page|int != 1 %}
+                                                            <form class="page_numbers" action={{current_path}}
+                                                                method=POST id="previous">
+                                                                <label>
+                                                                    <input type=submit value="{{interface['previous']}}"
+                                                                        style="display: none;">
+                                                                    <svg version="1.1" id="Capa_1" width="30px"
+                                                                        height="30px" xmlns="http://www.w3.org/2000/svg"
+                                                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                        x="0px" y="0px" viewBox="0 0 558.957 558.957"
+                                                                        style="enable-background:new 0 0 558.957 558.957;"
+                                                                        xml:space="preserve">
+                                                                        <g>
+                                                                            <g>
+                                                                                <polygon
+                                                                                    points="462.745,0 96.212,279.479 462.745,558.957 462.745,419.221 278.713,279.479 462.745,139.738   " />
+                                                                            </g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                    </svg>
+                                                                </label>
+                                                                <input type=hidden name=selected_page
+                                                                    value="{{current_page|int-1}}">
+                                                            </form>
+                                                            {% endif %}
+                                                            {% if current_page|int == 1 %}
+                                                            <form disabled="disabled" class="page_numbers"
+                                                                action={{current_path}} method=POST id="previous">
+                                                                <label>
+                                                                    <svg version="1.1" id="Capa_1" width="30px"
+                                                                        height="30px" xmlns="http://www.w3.org/2000/svg"
+                                                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                        x="0px" y="0px" viewBox="0 0 558.957 558.957"
+                                                                        style="enable-background:new 0 0 558.957 558.957;"
+                                                                        xml:space="preserve">
+                                                                        <g>
+                                                                            <g>
+                                                                                <polygon
+                                                                                    points="462.745,0 96.212,279.479 462.745,558.957 462.745,419.221 278.713,279.479 462.745,139.738   " />
+                                                                            </g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                    </svg>
+                                                                </label>
+                                                                <input type=hidden name=selected_page
+                                                                    value="{{current_page|int-1}}">
+                                                            </form>
+                                                            {% endif %}
+                                                            {% if num_pages|int > 11 %}
+                                                            {% if current_page|int > 5 and num_pages|int-5 > current_page|int %}
+                                                            {% for i in range(current_page|int-5,current_page|int+5) %}
+                                                            <form class="page_numbers" action={{current_path}}
+                                                                method=POST id="page_{{i-current_page|int+6}}">
+                                                                {% if i == current_page|int %}
+                                                                <input type=submit value="{{i}}" id='current_page'>
+                                                                {% else %}
+                                                                <input type=submit value="{{i}}">
+                                                                {% endif %}
+                                                                <input type=hidden name=selected_page value="{{i}}">
+                                                            </form>
+                                                            {% endfor %}
+                                                            {% elif 5>=current_page|int %}
+                                                            {% for i in range(1,11) %}
+                                                            <form class="page_numbers" action={{current_path}}
+                                                                method=POST id="page_{{i}}">
+                                                                {% if i == current_page|int %}
+                                                                <input type=submit value="{{i}}" id='current_page'>
+                                                                {% else %}
+                                                                <input type=submit value="{{i}}">
+                                                                {% endif %}
+                                                                <input type=hidden name=selected_page value="{{i}}">
+                                                            </form>
+                                                            {% endfor %}
+                                                            {% elif current_page|int >= num_pages|int-5 %}
+                                                            {% for i in range(num_pages|int-10,num_pages|int+1) %}
+                                                            <form action={{current_path}} method=POST
+                                                                id="page_{{i-num_pages|int-9}}">
+                                                                {% if i == current_page|int %}
+                                                                <input type=submit value="{{i}}" id='current_page'>
+                                                                {% else %}
+                                                                <input type=submit value="{{i}}">
+                                                                {% endif %}
+                                                                <input type=hidden name=selected_page value="{{i}}">
+                                                            </form>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% else %}
+                                                            {% for i in range(1,num_pages|int+1) %}
+                                                            <form class="page_numbers" action={{current_path}}
+                                                                method=POST id="page_{{i}}">
+                                                                {% if i == current_page|int %}
+
+                                                                <input type=submit value="{{i}}" id='current_page'>
+                                                                {% else %}
+                                                                <input type=submit value="{{i}}">
+                                                                {% endif %}
+                                                                <input type=hidden name=selected_page value="{{i}}">
+                                                            </form>
+                                                            {% endfor %}
+                                                            {% endif %}
+                                                            {% if current_page|int != num_pages|int %}
+                                                            <form class="page_numbers" action={{current_path}}
+                                                                method=POST id="next">
+                                                                <label>
+                                                                    <input type=submit value="{{interface['next']}}"
+                                                                        style="display: none;">
+                                                                    <svg version="1.1" id="Capa_1" width="30px"
+                                                                        height="30px" xmlns="http://www.w3.org/2000/svg"
+                                                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                        x="0px" y="0px" width="30px" height="30px"
+                                                                        scale=(-1,1) viewBox="0 0 558.957 558.957"
+                                                                        style="position:absolute; right:-5px;transform:scale(-1,1)"
+                                                                        xml:space="preserve">
+                                                                        <g>
+                                                                            <g>
+                                                                                <polygon
+                                                                                    points="462.745,0 96.212,279.479 462.745,558.957 462.745,419.221 278.713,279.479 462.745,139.738   " />
+                                                                            </g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                        <g>
+                                                                        </g>
+                                                                    </svg>
+                                                                    <input type=hidden name=selected_page
+                                                                        value="{{current_page|int+1}}">
+                                                            </form>
+                                                        </div>
+                                                        {% else %}
+                                                        <form disabled="disabled" class="page_numbers"
+                                                            action={{current_path}} method=POST id="next">
+                                                            <label>
+
+                                                                <svg version="1.1" id="Capa_1" width="30px"
+                                                                    height="30px" xmlns="http://www.w3.org/2000/svg"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                    y="0px" width="30px" height="30px" scale=(-1,1)
+                                                                    viewBox="0 0 558.957 558.957"
+                                                                    style="position:absolute; right:-5px;enable-background:new 0 0 558.957 558.957; transform:scale(-1,1)"
+                                                                    xml:space="preserve">
+                                                                    <g>
+                                                                        <g>
+                                                                            <polygon
+                                                                                points="462.745,0 96.212,279.479 462.745,558.957 462.745,419.221 278.713,279.479 462.745,139.738   " />
+                                                                        </g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                    <g>
+                                                                    </g>
+                                                                </svg>
+                                                            </label>
+                                                            <input type=hidden name=selected_page
+                                                                value="{{current_page|int+1}}">
+                                                        </form>
+                                                    </div>
+                                                    {% endif %}
+                                                </div>
+                                                <span id="ssrb_feed_end" style="display:none"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+                        
+
+                        
+
+
+
+                        
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
