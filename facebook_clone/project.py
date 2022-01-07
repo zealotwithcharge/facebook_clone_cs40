@@ -69,8 +69,7 @@ interface = {'title':"Twitter clone for CS40!",
 }
 current_language='english'
 language_list = GoogleTranslator.get_supported_languages()
-language_list.remove('Filipino')
-language_list.remove('Hebrew')
+
 ########################################
 # helper functions
 ########################################
